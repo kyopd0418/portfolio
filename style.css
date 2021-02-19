@@ -75,7 +75,7 @@ h1 {
 }
 
 h2 {
-  font-size: var(--font-regular);
+  font-size: var(--font-medium);
   font-weight: var(--weight-semi-bold);
   color: var(--color-black);
   margin: 8px 0px 0 0;
@@ -129,6 +129,15 @@ p {
   background-color: var(--color-dark-white);
 }
 
+.navbar__toggle-btn {
+  position: absolute;
+  top: 24px;
+  right: 30px;
+  font-size: 24px;
+  color: var(--color-light-white);
+  display: none;
+}
+
 /* Home */
 #home {
   background: url(images/pinkrose.png) center/cover no-repeat;
@@ -154,6 +163,7 @@ p {
   font-weight: var(--weight-regular);
   margin: 24px;
   padding: 8px 12px;
+  border: 2px solid var(--color-dark-white);
   border-radius: var(--size-border-radius);
 }
 
@@ -391,18 +401,18 @@ p {
 }
 
 .testimonials {
-  margin: 10px;
+  margin: 30px;
 }
 
 .testimonial {
   display: flex;
-  margin: 10px 0;
+  margin: 30px 0;
 }
 
 .testimonial__avatar {
-  width: 150px;
-  height: 150px;
-  border-radius: 70%;
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
   background-color: var(--color-dark-white);
   margin: 12px;
 }
@@ -419,4 +429,68 @@ p {
   padding: 15px;
   background-color: var(--color-white);
   border-radius: var(--size-border-radius);
+}
+
+/* Contact */
+#contact {
+  background-color: var(--color-purple);
+}
+
+.contact__Title,
+.contact__email,
+.contact__rights {
+  color: var(--color-white);
+}
+
+.contact__Title {
+  margin: 20px 0;
+}
+
+.contact__links {
+  font-size: var(--font-large);
+  margin: 20px 0;
+  transition: all var(--animation-duration) ease-in;
+}
+
+.contact__links i:hover {
+  transform: scale(1.5);
+  color: var(--color-light-white);
+}
+
+/* For below 768px screen width */
+@media screen and (max-width: 768px) {
+  display: block;
+
+  #navbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .navbar__menu {
+    flex-direction: column;
+    text-align: center;
+    width: 100%;
+    display: none;
+  }
+
+  .about__majors {
+    flex-direction: column;
+  }
+
+  .major {
+    margin-bottom: 38px;
+  }
+
+  .skillset {
+    flex-direction: column;
+  }
+
+  .project {
+    flex-grow: 1;
+  }
+
+  .testimonial__avatar {
+    width: 80px;
+    height: 80px;
+  }
 }
