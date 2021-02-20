@@ -40,7 +40,7 @@
 }
 
 body {
-  font-family: sans-serif;
+  font-family: fantasy;
   margin: 0;
   cursor: default;
 }
@@ -66,7 +66,7 @@ button {
   outline: none;
 }
 
-/* Typograhpy */
+/* Typography */
 h1 {
   font-size: var(--font-large);
   font-weight: var(--weight-bold);
@@ -97,12 +97,20 @@ p {
 
 /* Navbar */
 #navbar {
+  position: fixed;
+  width: 100%;
   display: flex;
   justify-content: space-between;
-  background-color: var(--color-purple);
   align-items: center;
-  color: var(--color-white);
   padding: 3px;
+  background-color: transparent;
+  color: var(--color-white);
+  transition: all var(--animation-duration) ease-in-out;
+}
+
+#navbar.navbar--dark {
+  background-color: var(--color-purple);
+  padding: 8px;
 }
 
 .navbar__menu {
@@ -141,7 +149,8 @@ p {
 /* Home */
 #home {
   background: url(images/pinkrose.png) center/cover no-repeat;
-  padding: 30px;
+  padding: 40px;
+  padding-top: 120px;
   text-align: center;
 }
 
