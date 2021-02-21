@@ -14,6 +14,7 @@
     src="https://kit.fontawesome.com/9a253a6ce6.js" crossorigin="anonymous">
     </script>
     <link href="https://fonts.googleapis.com/css2?family=Brygada+1918&family=Nanum+Pen+Script&family=Noto+Sans+KR:wght@100;400;500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,100&display=swap" rel="stylesheet">
     <link rel='stylesheet' href='style.css'>
     <script src='main.js' defer> </script>
 </head>
@@ -21,8 +22,8 @@
     <!--Navbar-->
     <nav id='navbar'>
         <div class='navbar__logo'>
-            <i class="far fa-moon"></i>
-            <a href='#'>Kyopdisme</a>
+            <img src='images/kyoloicon.png' class='navbar__logoimage' >
+            <a href='#' class='navbar__title'>Kyolo</a>
         </div>
         <div class='navbar__menu'>
             <ul class="navbar__menu">
@@ -50,8 +51,8 @@
     height ='10%'
     width = '15%''
     /> --> 
-    <h1 class="home__title">Hello, I'm Kyolo </h1>
-    <h2 class="home__description">Creative Game Brand Marketer residing in Seoul</h2>
+    <h1 class="home__title">Hola! I'm Kyo! </h1>
+    <h1 class="home__description">Creative Game Brand Marketer <br/> residing in Seoul</h1>
     <button class="home__contact">Contact Me</button>
    </div>
     </section>
@@ -96,36 +97,38 @@
         </h3>
       </div>
     </div>
-    <div class="about__jobs">
-     <class class="job">
+    <div class="about__jobs"></div>
+     <div class="job">
      <img src='images/nc.png' alt='ncsoft' class='job__logo' width='4%' height='4%'/>
      <div class="job__description">
-        <p class='job__name'>Currently working at NCSOFT as Brand Marketer</p>
-        <p class='job__period'>2015.01 ~ Until now </p>
+        <h3 class='job__name'>Currently working at NCSOFT as Brand Marketer</h3>
+        <h3 class='job__period'>2015.01 ~ Until now </h3>
      </div>
-    </class>
+    </div>
     <br>
     <br>
      <div class="job">
      <img src='images/adidas.png' alt='adidas' class='job__logo' width='4%' height ='3%'/>
      <div class="job__description">
-        <p class='job__name'>Worked intership for Adidas as Sales Marketer</p>
-        <p class='job__period'>2014.07 ~ 2014.10 </p>
+        <h3 class='job__name'>Worked intership for Adidas as Sales Marketer</h3>
+        <h3 class='job__period'>2014.07 ~ 2014.10 </h3>
      </div>
     </div>
+
+    </section>
     </section>
     <!--Skills-->
     <section id='skills' class='section'>
         <div class="section__container">
-            <h1> Skills </h1>
-            <h2> Skills & Attributes</h2>
-            <p>
+            <h1> Skills & Attributes </h1>
+            <br />
+            <h3>
             Experienced in launching marketing campaigns of mobile games. <br />
             Capable of working as a team, independently or with different areas of workers. 
             Through the communcation skills learned while working with agencies, programmers, employees in different branches of my company (Japan & Taiwan),<br/> 
             I have a well balanced communcation skills. Great at managing time, stress and planning things out in the given time. <br/>
             I am also well adapting to new environment and love to learn new things fastly. 
-            </p>
+            </h3>
             <div class='skillset'>
             <div class="skillset__left">
              <h3 class="skillset__title">Skills</h3>
@@ -181,67 +184,100 @@
     <section id='work' class='section'>
      <div class="section__container">
 
-        <h1>My work</h1>
-        <h3>Projects</h3>
+        <h1>My work / Projects </h1>
         <div class='work__categories'>
-            <button class="category__btn active" data-filter="*">All<span class='category__count'>7</span></button>
-            <button class="category__btn" data-filter="LineageM">LineageM<span class='category__count'>4</span></button>
-            <button class="category__btn" data-filter="Lineage2M">Lineage2M<span class='category__count'>2</span></button>
+            <button class="category__btn selected" data-filter="*">All<span class='category__count'>12</span></button>
+            <button class="category__btn" data-filter="LineageM">LineageM<span class='category__count'>8</span></button>
+            <button class="category__btn" data-filter="Lineage2M">Lineage2M<span class='category__count'>3</span></button>
             <button class="category__btn" data-filter="ETC">ETC<span class='category__count'>1</span></button>
         </div>
         <div class="work__projects">
             <a href='https://youtu.be/UMYThjCcAlk' class='project' target='blank' data-type="LineageM">
             <img src='images/screenshot/sc1.png' alt='LaunchingTVCF' class='project__img' >
             <div class="project__Description">
-                <h3> LineageM Teaser </h3>
-                <span> first teaser of LineageM </span>
+                <h3> LineageM Teaser 2017.04 </h3>
+                <p> first teaser of LineageM </p>
             </div>
             </a>
             <a href='https://youtu.be/U5jMa8BBBDs' class='project' target='blank' data-type="LineageM" >
             <img src='images/screenshot/sc2.png' alt='firstCinematictrailer' class='project__img'>
             <div class="project__Description">
-                <h3> LineageM First Cinematic Trailer </h3>
-                <span> first full 3D trailer of LineageM </span>
+                <h3> LineageM First Cinematic Trailer 2017.04 </h3>
+                <p> first full 3D trailer of LineageM </p>
             </div>
             </a>
+            <a href='https://youtu.be/kPdjW6bBi0A' class='project' target='blank' data-type="LineageM">
+                <img src='images/screenshot/sc11.png' alt='preregister' class='project__img' >
+                <div class="project__Description">
+                    <h3> LineageM Pre-Register Trailer 2017.05 </h3>
+                    <p> Launching Campaign : total of 3,600 million dollars spent </p>
+                </div>
+                </a>
+             <a href='https://youtu.be/FR1Ec7JFP8c' class='project' target='blank' data-type="LineageM">
+                <img src='images/screenshot/sc12.png' alt='Launching TVC' class='project__img' >
+                <div class="project__Description">
+                    <h3> LineageM Launching Trailer 2017.06 </h3>
+                    <p> Launching Campaign : total of 3,600 million dollars spent </p>
+                </div>
+                </a>
             <a href='https://youtu.be/QFBB__aTGIk' class='project' target='blank' data-type="LineageM" >
             <img src='images/screenshot/sc3.png' alt='firstCEOTVC' class='project__img' >
             <div class="project__Description">
-                <h3> LineageM TVC </h3>
-                <span> first TVC that CEO participated </span>
+                <h3> LineageM TVC Coupon I 2017.10 </h3>
+                <p> First TVC that CEO participated </p>
             </div>
             </a>
+            <a href='https://youtu.be/5FSDPro966Q' class='project' target='blank' data-type="LineageM" >
+                <img src='images/screenshot/sc13.png' alt='firstCEOTVC2' class='project__img' >
+                <div class="project__Description">
+                    <h3> LineageM TVC 2017.10 </h3>
+                    <p> First TVC that CEO participated </p>
+                </div>
+                </a>
             <a href='https://youtu.be/LMYcMPfafIY' class='project' target='blank' data-type="LineageM">
             <img src='images/screenshot/sc4.png' alt='2nd big TVC' class='project__img' >
             <div class="project__Description">
-                <h3> LineageM new concept of TVC </h3>
-                <span> new concept of game brand TVC </span>
+                <h3> LineageM TVC 2018.03 </h3>
+                <p> new concept of game brand TVC </p>
+            </div>
+            </a>
+            <a href='https://youtu.be/qcXWkdnyCXg' class='project' target='blank' data-type="LineageM">
+                <img src='images/screenshot/sc14.png' alt='ceo trailer 3' class='project__img' >
+                <div class="project__Description">
+                    <h3> LineageM TVC Coupon II 2018.06 </h3>
+                    <p> sequence trailer of the TVC released on 2017.10 </p>
+                </div>
+                </a>
+             <a href='https://youtu.be/ZS0W4_UVUtA' class='project' target='blank' data-type="Lineage2M">
+            <img src='images/screenshot/sc15.png' alt='L2M preregister TVC' class='project__img' >
+            <div class="project__Description">
+                <h3> Lineage2M Pre-register TVC 2019.10</h3>
+                <p> First Pre-register TVC of Lineage2M</p>
             </div>
             </a>
             <a href='https://youtu.be/JhAEuRfNjsY' class='project' target='blank' data-type="Lineage2M">
             <img src='images/screenshot/sc5.png' alt='L2M 1st TVC' class='project__img' >
             <div class="project__Description">
-                <h3> Lineage2M first Launching TVC </h3>
-                <span> First TVC to be taken globally</span>
+                <h3> Lineage2M first Launching TVC 2019.11</h3>
+                <p> Launching Campaign: total of 4,000 million dollars spent </p>
             </div>
             </a>
             <a href='https://youtu.be/sVlhZ8AC8Aw' class='project' target='blank' data-type="Lineage2M">
             <img src='images/screenshot/sc6.png' alt='L2M 2nd TVC' class='project__img' >
             <div class="project__Description">
-                <h3> Lineage2M Update Campaign TVC </h3>
-                <span> 2nd big TVC that CEO particpated</span>
+                <h3> Lineage2M Update Campaign TVC 2020.11 </h3>
+                <p> 2nd big TVC that CEO particpated</p>
             </div>
             </a>
             <a href='https://youtu.be/sVlhZ8AC8Aw' class='project' target='blank' data-type="ETC" >
             <img src='images/screenshot/sc7.png' alt='self edited video' class='project__img'>
             <div class="project__Description">
                 <h3> V-Log Youtube content </h3>
-                <span> youtube content created by myself (first project) </span>
+                <p> youtube content created by myself (first project) </p>
             </div>
             </a>
         </div>
      </div>
-
     </section>
     <!--Testimonials-->
     <section id='testimonials' class='section'>
@@ -250,29 +286,35 @@
         <h3>See what they say about me</h3>
         <div class="testimonials">
             <div class="testimonial">
-                <img src='images/testimonial/person.PNG' alt='People' class='testimonial__avatar' width='20%' height='20%'/>
+                <img src='images/testimonial/2.png' alt='People' class='testimonial__avatar' width='50%' height='50%'/>
                 <div class="testimonial__speech-bubble">
-                    <p>
-                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Culpa maiores molestiae assumenda dolore sint, vitae, possimus consequatur odio vel voluptatem iste doloribus veniam ad dolorum blanditiis in tenetur, nihil nemo.
-                    </p>
-                    <p class="name">Manager / NCSOFT </p>
+                    <h3>
+                    Very creative and diligent person I have ever worked with. She is very diligent and also very quick learner. <br />She adapts to environment very fast. 
+                    I have worked with her for 2 years in the same team. While working with her, she inspired me a lot, especially her ability to view things in a very creative and new method. 
+                    Also she does everything fast, get the works done fast than anyother team members.
+                    </h3>
+                    <h3 class="name">Manager / NCSOFT </h3> 
                 </div>
             </div>
-            <div class="testimonial">
+            <br />
+            <div class="testimonial"> 
                 <div class="testimonial__speech-bubble">
-                    <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt molestiae ex dicta cupiditate, fugiat minus, illo, culpa alias consequuntur tenetur ut vel dolor eius debitis. Rerum rem reiciendis ipsam quod!
-                    </p>
-                    <p class="name"> CO-Worker / NCSOFT </p>
+                    <h3>
+                    I learned a lot from her. She helped me a lot to get ease in the team. Also the work I am doing now was all new to me at first, but she taught and helped me 
+                    do the work that I had to do, she was a good mentor to me. Also she has very flexible attitude. When I am overloaded with work, eventhough she too has a lot of projects in charge, 
+                    she feels the responsibility to help me and get the works done since we are in the same team. 
+                    </h3>
+                    <h3 class="name"> CO-Worker / NCSOFT </h3>
                 </div>
-                <img src='images/testimonial/person.PNG' alt='People' class='testimonial__avatar' width='20%' height='20%'/>
+                <img src='images/testimonial/4.png' alt='People' class='testimonial__avatar' width='50%' height='50%'/>
             </div>
         </div>
        </div>
     </section>
+
     <!--Contact-->
     <section id='contact' class='section'>
-        <h1 class="contact__Title">Let's Talk</h1>
+        <h1 class="contact__Title">For more info, contact me </h1>
         <h2 class="contact__email">kyopd0418@gmail.com</h2>
         <div class="contact__links">
             <a href='https://www.instagram.com/kyoground/' target='_blank'>
