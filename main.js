@@ -96,7 +96,9 @@ workBtnContainer.addEventListener('click', (e) =>{
 });
 
 
-// 1. 모든
+// 1. 모든 섹션 요소들을 가지고 온다.
+// 2. intersectionobserver를 이용해서 모든 섹션을 관찰한다. 
+// 3. 보여지는 섹션에 해당하는 메뉴 아이템을 활성화 시킨다. 
 
 const sectionIds = [
     '#home',
@@ -155,8 +157,6 @@ window.addEventListener('wheel', () => {
     if(window.scrollY === 0) {
         selectedNavIndex = 0;
     } else if (window.scrollY + window.innerHeight === document.body.clientHeight) 
-    {
-        selectedNavIndex = navItems.length -1;
-    }
+    { selectedNavIndex = navItems.length -1; }
     selectNavItem(navItems[selectedNavIndex]);
 });
